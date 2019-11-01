@@ -11,7 +11,7 @@ Consists of:
 * Back end application setting up endpoints a user can access
 * Multiple Methods : `GET`, `POST`, `PUT`, etc.
 
-vs
+*vs*
 
 **Webhooks**: You update an user using an endpoint, you then broadcast inform another app of that change. It is event based.
 
@@ -41,14 +41,17 @@ Option 2 is a webhook. A event will trigger an API call to a specified endpoint 
 ### As the receiver
 
 Recieve events from from GitHub repository when changes are made
-Update you website when you update your twiter profile
+Update you website when you update your twiter profile:
 
-
+![consumer](images/consumer.png)
 
 
 ### As the producer
 
 Architecture for a single consumer:
 
+![single producer](images/single_producer.png)
 
 Architecture for multiple consumers:
+
+![multiple producer](images/multi_producer.png)
